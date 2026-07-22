@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: txt2shorts-bot
+    env: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
+      - key: PORT
+        value: 10000
